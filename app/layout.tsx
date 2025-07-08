@@ -18,6 +18,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="sv" suppressHydrationWarning>
+      <head>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5S4RZ1ESKJ"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-5S4RZ1ESKJ');
+          `}
+        </script>
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
